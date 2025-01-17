@@ -39,15 +39,17 @@ const Footer = () => {
             variants={itemVariants}
           >
             <h3 className="text-2xl font-bold">Salud Animalia</h3>
-            <p className="mt-2">Cuidando a tus mascotas desde 2024</p>
+            <p className="mt-2">
+              Cuidando a tus mascotas desde {new Date().getFullYear()}
+            </p>
           </motion.div>
           <motion.div
             className="w-full md:w-1/3 text-center mb-6 md:mb-0"
             variants={itemVariants}
           >
             <h4 className="text-lg font-semibold mb-2">Contáctanos</h4>
-            <p>+1 (555) 123-4567</p>
-            <p>info@saludanimalia.com</p>
+            <p>+57 (300) 482-7174</p>
+            <p>jeronimo.jsa.133@gmail.com</p>
           </motion.div>
           <motion.div
             className="w-full md:w-1/3 text-center md:text-right"
@@ -75,7 +77,10 @@ const Footer = () => {
           className="mt-8 text-center text-sm"
           variants={itemVariants}
         >
-          <p>&copy; 2024 Salud Animalia. Todos los derechos reservados.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Salud Animalia. Todos los derechos
+            reservados.
+          </p>
         </motion.div>
       </motion.div>
     </motion.footer>
